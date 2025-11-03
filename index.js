@@ -1,30 +1,22 @@
 const botonProducto1 = document.getElementById("añadir-producto1")
 botonProducto1.addEventListener("click", function agregarProducto1() {
     const nombre = document.getElementById("nombre-producto1").textContent
-    const carritoProductos = JSON.parse(localStorage.getItem("carrito"))
-    const listaProductos = []
-    const carrito = carritoProductos || listaProductos
-    carrito.push(nombre)
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-    localStorage.removeItem("nombre")
-    window.location.reload();
+    agregarAlCarrito(nombre)
 })
 
 const botonProducto2 = document.getElementById("añadir-producto2")
 botonProducto2.addEventListener("click", function agregarProducto2() {
     const nombre = document.getElementById("nombre-producto2").textContent
-    const carritoProductos = JSON.parse(localStorage.getItem("carrito"))
-    const listaProductos = []
-    const carrito = carritoProductos || listaProductos
-    carrito.push(nombre)
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-    localStorage.removeItem("nombre")
-    window.location.reload();
+    agregarAlCarrito(nombre)
 })
 
 const botonProducto3 = document.getElementById("añadir-producto3")
 botonProducto3.addEventListener("click", function agregarProducto3() {
     const nombre = document.getElementById("nombre-producto3").textContent
+    agregarAlCarrito(nombre)
+})
+
+function agregarAlCarrito(nombre) {
     const carritoProductos = JSON.parse(localStorage.getItem("carrito"))
     const listaProductos = []
     const carrito = carritoProductos || listaProductos
@@ -32,8 +24,7 @@ botonProducto3.addEventListener("click", function agregarProducto3() {
     localStorage.setItem("carrito", JSON.stringify(carrito))
     localStorage.removeItem("nombre")
     window.location.reload();
-})
-
+}
 
 const carrito = JSON.parse(localStorage.getItem("carrito"))
 

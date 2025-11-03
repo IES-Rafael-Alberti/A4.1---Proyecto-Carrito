@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="64x64" href="./assets/img/OIF.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/OIF.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>GAMINGSHOP.com</title>
+</head>
+<body>
+<header class="cabecera">
+    <article class="cabecera__portada">
+        <h1>GAMINGSHOP.com</h1>
+    </article>
+</header>
+<main class="cuerpo2">
+    <section class="cuerpo2__productos">
+        <h2>Lista de videojuegos</h2>
+        <article class="cuerpo2__producto">
+            <a href="assets/img/terraria.png" class="cuerpo2__imagen-producto"><img src="assets/img/terraria.png" alt="Terraria" class="cuerpo2__imagen2"></a>
+            <p>Nombre: <span id="nombre-producto1">Terraria</span></p>
+            <p id="contador1"></p>
+            <p>Precio: <span id="precio-producto1">29.99</span>€</p>
+            <button class="cuerpo2__boton-producto" id="añadir-producto1">Añadir al carrito</button>
+            <button class="cuerpo2__boton-producto" id="boton-producto1">Eliminar Producto</button>
+        </article>
+        <article class="cuerpo2__producto">
+            <a href="assets/img/hollow%20knight.png" class="cuerpo2__imagen-producto"><img src="assets/img/hollow%20knight.png" alt="Hollow Knight" class="cuerpo2__imagen2"></a>
+            <p>nombre: <span id="nombre-producto2">Hollow Knight</span></p>
+            <p id="contador2"></p>
+            <p>Precio: <span id="precio-producto2">14.99</span>€</p>
+            <button class="cuerpo2__boton-producto" id="añadir-producto2">Añadir al carrito</button>
+            <button class="cuerpo2__boton-producto" id="boton-producto2">Eliminar Producto</button>
+        </article>
+        <article class="cuerpo2__producto">
+            <a href="assets/img/hollow%20knight%20silksong.png" class="cuerpo2__imagen-producto"><img src="assets/img/hollow%20knight%20silksong.png" alt="Hollow Knight Silksong" class="cuerpo2__imagen2"></a>
+            <p>nombre: <span id="nombre-producto3">Hollow Knight Silksong</span></p>
+            <p id="contador3"></p>
+            <p>Precio: <span id="precio-producto3">19.99</span>€</p>
+            <button class="cuerpo2__boton-producto" id="añadir-producto3">Añadir al carrito</button>
+            <button class="cuerpo2__boton-producto" id="boton-producto3">Eliminar Producto</button>
+        </article>
+    </section>
+    <article class="cuerpo2__producto" id="producto">
+        <p>Total de productos comprados: <span id="cantidad-total"></span></p>
+        <p>precio total: <span id="precio-total"></span>€</p>
+        <button class="cuerpo4__boton-producto" id="boton-compra">Realizar Compra</button>
+    </article>
+</main>
+<footer class="pie">
+    <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
+        <img src="./assets/img/copyright_black.png" alt="Logo" id="pie__copyright" class="pie__copyright">
+    </h4>
+</footer>
+</body>
+<script src="index.js"></script>
+</html>
